@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: cursive;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.App {
+    background: linear-gradient(90deg, #ff7300, #fffb00, #49ff00, #00ffd5, #7a00ff, #ff00c8);
+    background-size: 300%;
+    animation: anim 8.0s infinite ease-in-out;
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    body{
+        width: 140%;
+    }
+}

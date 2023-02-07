@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
 import { Board } from './components/board'
-import { Scoreboard } from './components/scoreboard';
-import {Header} from './components/header'
+import { Scoreboard } from './components/scoreboard'
+import { Header } from './components/header'
+import { Footer } from './components/footer'
 
 function App() {
   const win_conditions =[
@@ -71,6 +72,7 @@ setBoard(Array(9).fill(null))
       <Header/>
       <Scoreboard scores={scores} xPlaying={xPlaying}/>
       <Board board={board} onClick ={gameOver ? resetBoard :handleBoxClick}/>
+      <Footer/>
     </div>
   );
 }

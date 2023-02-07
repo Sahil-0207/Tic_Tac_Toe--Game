@@ -1,61 +1,7 @@
-.row .col-2 .reset-button{
-    float: right;
-    width: 3%;
-    color: white;
-    background-color: blue;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    margin: 2rem auto;
-    margin-right: 90px;
-}
-
-.row .col-1{
+.header{
     font-size: 2.5rem;
-    float: left;
-    width: 40%;
     font-weight: bold;
-    color: white;
-    margin: 1rem auto;
-    padding-left: 55px;
-}
-
-.row .col-1::before{
-    content: "";
-    background: linear-gradient(45deg, #ff0000,#ff7300,#fffb00,#49ff00,#00ffd5,#002bff,#7a00ff,#ff00c8,#ff0000);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(15px);
-    width: 85.5rem;
-    height: 41.1rem;
-    animation: glowing 20s linear infinite;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.row .col-1::after{
-    z-index: -1;
-    position: absolute;
-    top: 17px;
-    left: 17px;
-    right: 17px;
-    background: black;
-    content: "";
-    border-radius: 50px;
-    width: 83.3rem;
-    height: 39rem;
-}
-@keyframes glowing{
-    0%{
-        background-position: 0 0;
-    }
-    50%{
-        background-position: 400% 0;
-    }
-    100%{
-        background-position: 0 0;
-    }
+    color: rgb(0, 0, 0);
+    padding-left: 3rem;
+    padding-top: 2rem;
 }

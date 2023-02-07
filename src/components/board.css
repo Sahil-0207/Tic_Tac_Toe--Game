@@ -4,3 +4,15 @@
     place-items: center;
     justify-content: center;
 }
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.reset-button{
+    margin-top: 1.5rem;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+}
